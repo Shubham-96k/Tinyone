@@ -1,0 +1,122 @@
+.container{
+	width: 1180px;
+	margin: 0 auto;
+}
+
+/*###########CSS FOR GRID SYSTEM ###########*/
+
+.row,
+.row::after,
+.row::before{
+	display: table;
+	clear: both;
+	width: 100%;
+}
+
+[class ^="col-"]{
+	float: left;
+	padding: 0 15px;
+}
+.col-1{
+	width: calc(100% * 1 / 12);
+}
+.col-2{
+	width: calc(100% * 2 / 12);
+}
+.col-3{
+	width: calc(100% * 3 / 12);
+}
+.col-4{
+	width:calc(100% * 4 / 12);
+}
+.col-5{
+	width: calc(100% * 5 / 12);
+}
+.col-9{
+	width: calc(100% * 9 / 12);
+}
+.col-10{
+	width: calc(100% * 10 / 12);
+}
+.col-12{
+	width: 100%;
+}
+
+
+/*###############CSS FOR TYPOGRAPHY#########*/
+
+.pri-heading{
+	font-size: 32px;
+	font-weight: bold;
+	color: #010101;
+	margin-bottom: 22px;
+}
+.sec-heading{
+	font-size: 20px;
+	font-weight: 400;
+	color: #313841;
+	margin-bottom: 23px;
+}
+.paragraph{
+	font-size: 16px;
+	font-weight: 400;
+	color: #555555;
+	margin-bottom: 40px;
+}
+
+/*#########MARGIN AND PADDING CSS###########*/
+
+.mb-70{
+	margin-bottom: 70px;
+}
+.mt-70{
+	margin-top: 70px;
+}
+.mb-90{
+	margin-bottom: 90px;
+}
+.mb-45{
+	margin-bottom: 45px;
+}
+.mb-134{
+	margin-bottom: 134px;
+}
+
+/*############Alignment CSS###########*/
+
+.text-center{
+	text-align: center;
+}
+.translate-animation i:hover{
+	animation: bounce 1.5s linear;
+	transform: scale(1, 1);
+}
+
+/*##########OFFSET CLASSES#########*/
+
+.col-offset-2{
+	margin-left: calc(100% * 2 / 12);
+}
+.col-offset-1{
+	margin-left: calc(100% * 1 / 12);
+}
+
+/*############KEYFRAMES#########*/
+
+@keyframes bounce{
+	0%{
+		margin-bottom: 0;
+	}
+	25%{
+		margin-bottom: 60px;
+	}
+	50%{
+		margin-bottom: 0;
+	}
+	75%{
+		margin-bottom: 30px;
+	}
+	100%{
+		margin-bottom: 0;
+	}
+}
